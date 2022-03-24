@@ -1,1 +1,1 @@
-print(home)
+print("home")
