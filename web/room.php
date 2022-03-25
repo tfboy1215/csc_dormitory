@@ -1,6 +1,6 @@
 <?php
-    include("header.php");
-    include("conDB.php");
+include("header.php");
+include("conDB.php");
 ?>
 
 <body>
@@ -20,23 +20,65 @@
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                     <input type="search" class="form-control form-control-dark bg-dark text-light" placeholder="ค้นหา" aria-label="Search">
                 </form>
+
             </div>
+
         </div>
+
     </header>
 
     <br><br><br>
     <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                One of three columns
-            </div>
-            <div class="col-sm">
-                One of three columns
-            </div>
-            <div class="col-sm">
-                One of three columns
-            </div>
-        </div>
+        <?php
+        $sql = "SELECT * FROM `dormitory`";
+        $result = $conn->query($sql);
+        if ($result) {
+            $rows = [];
+            while ($getData = mysqli_fetch_assoc($result)) {
+                array_push($rows, $getData);
+            }
+            $sizeRows = sizeof($rows);
+            for ($i = 0; $i < $sizeRows; $i++) {
+                print('<div class="row">');
+                if ($i < $sizeRows) {
+                    print('<div class="col-sm">');
+                    print('<div class="container">');
+                    $img = '<img src="../image/'.$rows[$i]['image'].'" alt="home" style="height: 120px;width: 170px;px;">';
+                    print($img);
+                    $data = $rows[$i]['dormitory_room'];
+                    print('<h6>หอ :'.$data.'</h6>');
+                    $data = $rows[$i]['dormitory_room'];
+                    print('<h6>ราตา :'.$data.'</h6>');
+                    $data = $rows[$i]['price'];
+                    print('<h6>ราตา :'.$data.'</h6>');
+                    $data = $rows[$i]['desscription'];
+                    print('<h6>ต่าง :'.$data.'</h6>');
+                    $data = $rows[$i]['address'];
+                    print('<h6>ที่อยู่ :'.$data.'</h6>');
+                    $data = $rows[$i]['contact'];
+                    print('<h6>ติดต่อ :'.$data.'</h6>');
+                    print('</div>');
+                    print('</div>');
+                    $i++;
+                }
+                if ($i < $sizeRows) {
+                    print('<div class="col-sm">');
+
+                    print('</div>');
+                    $i++;
+                }
+                if ($i < $sizeRows) {
+                    print('<div class="col-sm">');
+
+                    print('</div>');
+                    $i++;
+                }
+                print('</div>');
+            }
+        }
+        $conn->close();
+        ?>
+        
     </div>
 </body>
 

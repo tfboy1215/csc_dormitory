@@ -5,11 +5,14 @@
         <img src="../image/home.jpg" alt="home" style="height: 100%;width:100%;" < class="bottom-left">
         <div class="home">
             <h1>
-                หีพัก
+                หอพัก CSC
             </h1>
             <h1>
-                csc
+                DORMYTORY
             </h1>
+            <h4>
+                แนะนำหอพักใกล้ มก.ฉกส.
+            </h4>
             <br>
             <a href="room.php"><button type="button" class="btn btn-success">
                     <i class="fa-solid fa-arrow-right-long"></i>
