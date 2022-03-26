@@ -8,7 +8,7 @@
                 หอพัก CSC
             </h1>
             <h1>
-                DORMYTORY
+                DORMITORY
             </h1>
             <h4>
                 แนะนำหอพักใกล้ มก.ฉกส.
