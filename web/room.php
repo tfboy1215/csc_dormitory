@@ -63,13 +63,43 @@ include("conDB.php");
                 }
                 if ($i < $sizeRows) {
                     print('<div class="col-sm">');
-
+                    print('<div class="container">');
+                    $img = '<img src="../image/'.$rows[$i]['image'].'" alt="home" style="height: 120px;width: 170px;px;">';
+                    print($img);
+                    $data = $rows[$i]['dormitory_room'];
+                    print('<h6>หอ :'.$data.'</h6>');
+                    $data = $rows[$i]['dormitory_room'];
+                    print('<h6>ราตา :'.$data.'</h6>');
+                    $data = $rows[$i]['price'];
+                    print('<h6>ราตา :'.$data.'</h6>');
+                    $data = $rows[$i]['desscription'];
+                    print('<h6>ต่าง :'.$data.'</h6>');
+                    $data = $rows[$i]['address'];
+                    print('<h6>ที่อยู่ :'.$data.'</h6>');
+                    $data = $rows[$i]['contact'];
+                    print('<h6>ติดต่อ :'.$data.'</h6>');
+                    print('</div>');
                     print('</div>');
                     $i++;
                 }
                 if ($i < $sizeRows) {
                     print('<div class="col-sm">');
-
+                    print('<div class="container">');
+                    $img = '<img src="../image/'.$rows[$i]['image'].'" alt="home" style="height: 120px;width: 170px;px;">';
+                    print($img);
+                    $data = $rows[$i]['dormitory_room'];
+                    print('<h6>หอ :'.$data.'</h6>');
+                    $data = $rows[$i]['dormitory_room'];
+                    print('<h6>ราตา :'.$data.'</h6>');
+                    $data = $rows[$i]['price'];
+                    print('<h6>ราตา :'.$data.'</h6>');
+                    $data = $rows[$i]['desscription'];
+                    print('<h6>ต่าง :'.$data.'</h6>');
+                    $data = $rows[$i]['address'];
+                    print('<h6>ที่อยู่ :'.$data.'</h6>');
+                    $data = $rows[$i]['contact'];
+                    print('<h6>ติดต่อ :'.$data.'</h6>');
+                    print('</div>');
                     print('</div>');
                     $i++;
                 }
