@@ -21,6 +21,11 @@ include("conDB.php");
                     <input type="search" class="form-control form-control-dark bg-dark text-light" placeholder="ค้นหา" aria-label="Search">
                 </form>
 
+                <div class="col-md-3 text-end">
+                    <a href="login.php"><button type="button" class="btn btn-outline-primary me-2 bg-light">Login</button></a>
+                    <button type="button" class="btn btn-primary">Sign-up</button>
+                </div>
+
             </div>
 
         </div>
@@ -43,18 +48,18 @@ include("conDB.php");
                 if ($i < $sizeRows) {
                     print('<div class="col-sm">');
                     print('<div class="container">');
-                    $img = '<img src="../image/'.$rows[$i]['image'].'" alt="home" style="height: 120px;width: 170px;px;">';
+                    $img = '<img src="../image/' . $rows[$i]['image'] . '" alt="home" style="height: 120px;width: 170px;px;">';
                     print($img);
                     $data = $rows[$i]['dormitory_room'];
-                    print('<h6>หอ :'.$data.'</h6>');
+                    print('<h6>หอ :' . $data . '</h6>');
                     $data = $rows[$i]['price'];
-                    print('<h6>ราคา :'.$data.'</h6>');
+                    print('<h6>ราคา :' . $data . '</h6>');
                     $data = $rows[$i]['desscription'];
-                    print('<h6>ต่าง :'.$data.'</h6>');
+                    print('<h6>ต่าง :' . $data . '</h6>');
                     $data = $rows[$i]['address'];
-                    print('<h6>ที่อยู่ :'.$data.'</h6>');
+                    print('<h6>ที่อยู่ :' . $data . '</h6>');
                     $data = $rows[$i]['contact'];
-                    print('<h6>ติดต่อ :'.$data.'</h6>');
+                    print('<h6>ติดต่อ :' . $data . '</h6>');
                     print('</div>');
                     print('</div>');
                     $i++;
@@ -62,18 +67,18 @@ include("conDB.php");
                 if ($i < $sizeRows) {
                     print('<div class="col-sm">');
                     print('<div class="container">');
-                    $img = '<img src="../image/'.$rows[$i]['image'].'" alt="home" style="height: 120px;width: 170px;px;">';
+                    $img = '<img src="../image/' . $rows[$i]['image'] . '" alt="home" style="height: 120px;width: 170px;px;">';
                     print($img);
                     $data = $rows[$i]['dormitory_room'];
-                    print('<h6>หอ :'.$data.'</h6>');
+                    print('<h6>หอ :' . $data . '</h6>');
                     $data = $rows[$i]['price'];
-                    print('<h6>ราคา :'.$data.'</h6>');
+                    print('<h6>ราคา :' . $data . '</h6>');
                     $data = $rows[$i]['desscription'];
-                    print('<h6>ต่าง :'.$data.'</h6>');
+                    print('<h6>ต่าง :' . $data . '</h6>');
                     $data = $rows[$i]['address'];
-                    print('<h6>ที่อยู่ :'.$data.'</h6>');
+                    print('<h6>ที่อยู่ :' . $data . '</h6>');
                     $data = $rows[$i]['contact'];
-                    print('<h6>ติดต่อ :'.$data.'</h6>');
+                    print('<h6>ติดต่อ :' . $data . '</h6>');
                     print('</div>');
                     print('</div>');
                     $i++;
@@ -81,18 +86,18 @@ include("conDB.php");
                 if ($i < $sizeRows) {
                     print('<div class="col-sm">');
                     print('<div class="container">');
-                    $img = '<img src="../image/'.$rows[$i]['image'].'" alt="home" style="height: 120px;width: 170px;px;">';
+                    $img = '<img src="../image/' . $rows[$i]['image'] . '" alt="home" style="height: 120px;width: 170px;px;">';
                     print($img);
                     $data = $rows[$i]['dormitory_room'];
-                    print('<h6>หอ :'.$data.'</h6>');
+                    print('<h6>หอ :' . $data . '</h6>');
                     $data = $rows[$i]['price'];
-                    print('<h6>ราคา :'.$data.'</h6>');
+                    print('<h6>ราคา :' . $data . '</h6>');
                     $data = $rows[$i]['desscription'];
-                    print('<h6>ต่าง :'.$data.'</h6>');
+                    print('<h6>ต่าง :' . $data . '</h6>');
                     $data = $rows[$i]['address'];
-                    print('<h6>ที่อยู่ :'.$data.'</h6>');
+                    print('<h6>ที่อยู่ :' . $data . '</h6>');
                     $data = $rows[$i]['contact'];
-                    print('<h6>ติดต่อ :'.$data.'</h6>');
+                    print('<h6>ติดต่อ :' . $data . '</h6>');
                     print('</div>');
                     print('</div>');
                     $i++;
@@ -102,7 +107,7 @@ include("conDB.php");
         }
         $conn->close();
         ?>
-        
+
     </div>
 </body>
 
