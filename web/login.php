@@ -28,7 +28,7 @@ include("header.php");
                             </div>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">login</button>
+                            <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-light">Login</button>
                         </div>
                     </form>
                 </div>
