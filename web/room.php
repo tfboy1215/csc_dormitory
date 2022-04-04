@@ -98,7 +98,7 @@ include("conDB.php");
                         $getMode = $_GET['mode'];
                     }
                     if ($getMode == "my_room") {
-                        $sql = "SELECT * FROM `dormitory` WHERE `user_id` = " . $_SESSION['user_id'] ;
+                        $sql = "SELECT * FROM `dormitory` WHERE `user_id` = " . $_SESSION['user_id'];
                     } elseif ($getMode == "wait") {
                         $sql = "SELECT * FROM `dormitory` WHERE `status` = 'WAIT_APPROVE'";
                     } else {
@@ -146,7 +146,16 @@ include("conDB.php");
                         print('<td>');
                         if ($_SESSION) {
                             if ((int)$_SESSION['role'] <= 2 && $row['status'] == "WAIT_APPROVE") {
-                                print('<button type="button" id="approveBt" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#approve"><i class="fa-solid fa-check" style="height: 20px;width: 20px;"></i></button>' . ' ');
+                                $obj = json_encode($row);
+                ?>
+                                <button type="button" name='<?php echo $obj ?>' id="approveBt" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#approve""><i class=" fa-solid fa-check" style="height: 20px;width: 20px;"></i></button>
+                            <?php
+                            }
+                            if ((int)$_SESSION['role'] <= 2) {
+                                $obj = json_encode($row);
+                            ?>
+                                <button type="button" name='<?php echo $obj ?>' id="deleteBt" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteDom"><i class=" fa-solid fa-x" style="height: 20px;width: 20px;"></i></button>
+                <?php
                             }
                         }
                         print('<a href="roomDetail.php" target="_blank"><button type="button" class="btn btn-info btn-sm"><i class="fa-regular fa-circle-info" style="height: 20px;width: 20px;"></i></button></a>');
@@ -162,16 +171,11 @@ include("conDB.php");
         <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
         <script src="../node_modules/datatables.net/js/jquery.dataTables.js"></script>
         <script src="../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('#datatable').DataTable({
-                    "scrollX": true
-                });
-            });
-        </script>
+        <script src="room.js"></script>
     </div>
     </div>
-    <i class="fa-light fa-house-chimney"> adasd</i>
+
+
 </body>
 
 <div class="modal fade" id="selectMode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -192,7 +196,7 @@ include("conDB.php");
                                 <select name="mode" id="mode" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                                     <option value="all">All room</option>
                                     <option value="my_room">My room</option>
-                                    <option value="wait">WAITAPPROVE</option>
+                                    <option value="wait">WAIT APPROVE</option>
                                 </select>
                             <?php
                             } else {
@@ -220,7 +224,7 @@ include("conDB.php");
 <div class="modal fade" id="approve" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <form id="form-deleteLot" action="" method="get">
+            <form id="form-deleteLot" action="apporveSubmit.php" method="post">
                 <div class="modal-header">
                     <h4 class="modal-title">Approve</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -228,7 +232,8 @@ include("conDB.php");
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="approve">คุณต้องการอนุมัติ ห้อง: <span id="room_name"></span></label>
+                        <input type="hidden" id="dormitoryId" name="id">
+                        <label for="approve">คุณต้องการอนุมัติ หอ: <span id="room_name">xxx</span></label>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -239,5 +244,31 @@ include("conDB.php");
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="deleteDom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form id="form-deleteLot" action="deleteSubmit.php" method="post">
+                <div class="modal-header">
+                    <h4 class="modal-title">Delete</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="hidden" id="deleteDormitoryId" name="id">
+                        <label for="delete">คุณต้องการลบ หอ: <span id="roomNameDelete">xxx</span></label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Yes</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
 
 <?php include("footer.php"); ?>
