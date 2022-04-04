@@ -33,7 +33,14 @@ include("conDB.php");
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="mr-2 d-none d-lg-inline text-white-600 small"><?php print($_SESSION["username"] . "&nbsp;") ?></span>
-                            <img class="rounded-circle" src="../image/other/undraw_profile_3.svg" width="40px" height="40px">
+                            <?php
+                            if ((int)$_SESSION["role"] <= 2) {
+                                $pro = "../image/other/undraw_profile.svg";
+                            } else {
+                                $pro = "../image/other/undraw_profile_3.svg";
+                            }
+                            ?>
+                            <img class="rounded-circle" src="<?php echo $pro ?>" width="40px" height="40px">
                         </a>
 
                         <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
@@ -70,7 +77,9 @@ include("conDB.php");
         <?php
         if ($_SESSION) {
             print('<div>');
-            print('<button type="button" id="selectModeBt" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#selectMode"><i class="fa-solid fa-arrow-down-wide-short" style="height: 18px;width: 18px;"></i> Select </button>');
+            print('<button type="button" id="selectModeBt" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#selectMode"><i class="fa-solid fa-arrow-down-wide-short" style="height: 18px;width: 18px;"></i> Select </button>');
+            print("  ");
+            print('<button type="button" id="addBt" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#add"><i class="fa-solid fa-plus" style="height: 18px;width: 18px;"></i> Add </button>');
             print('</div>');
         } else {
             print('<br>');
@@ -113,7 +122,7 @@ include("conDB.php");
                         print('<tr>');
                         print('<td>');
                         print('<div style="height: 80px;width: 170px;px;">');
-                        $img = '<img src="../image/' . $row['image'] . '" alt="home" style="height: 80px;width: 170px;px;">';
+                        $img = '<img src="../image/upload/' . $row['image'] . '" alt="home" style="height: 80px;width: 170px;px;">';
                         print($img);
                         print('</div>');
                         print('</td>');
@@ -177,6 +186,53 @@ include("conDB.php");
 
 
 </body>
+<div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form id="form-deleteLot" action="addSubmit.php" method="post" enctype="multipart/form-data">
+                <div class="modal-header">
+                    <h4 class="modal-title">Add</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div>
+                        <input type="hidden" name="role" value="<?php echo $_SESSION['role'] ?>">
+                        <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id'] ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label for="add" class="form-label">รูป ย่อ</label>
+                        <input class="form-control" type="file" id="formFile" name="my_file">
+                    </div>
+                    <div class="form-group">
+                        <label for="add" class="form-label">ชื่อ หอ</label>
+                        <input type="text" class="form-control" id="addName" name="name" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="add" class="form-label">ราคา ฿</label>
+                        <input type="number" class="form-control" id="addPrice" name="price" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="add" class="form-label">รายระเอียด ย่อ</label>
+                        <input type="text" class="form-control" id="addDess" name="desscription" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="add" class="form-label">ที่อยู่</label>
+                        <input type="text" class="form-control" id="addAddress" name="address" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="add" class="form-label">ติดต่อ</label>
+                        <input type="text" class="form-control" id="contact" name="contact" required="required">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Add</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <div class="modal fade" id="selectMode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">

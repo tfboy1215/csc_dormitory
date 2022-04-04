@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="js/vendor/codemirror/lib/codemirror.css?v=5.1.3">
     <link rel="stylesheet" type="text/css" href="js/vendor/codemirror/addon/hint/show-hint.css?v=5.1.3">
     <link rel="stylesheet" type="text/css" href="js/vendor/codemirror/addon/lint/lint.css?v=5.1.3">
-    <link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/theme.css?v=5.1.3&nocache=643972006ltr&server=1">
+    <link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/theme.css?v=5.1.3&nocache=3801290826ltr&server=1">
     <link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/printview.css?v=5.1.3" media="print" id="printcss">
     <title>localhost / 127.0.0.1 | phpMyAdmin 5.1.3</title>
     <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery.min.js?v=5.1.3"></script>
@@ -260,7 +260,7 @@ $(function() {
       </div>
       <div id="pma_navigation_tree" class="list_container synced highlight autoexpand">
 
-  <div class="pma_quick_warp"><div class="drop_list"><button title="Recent tables" class="drop_button btn">Recent</button><ul id="pma_recent_list"><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=dormitory">`csc_dormitory`.`dormitory`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=users">`csc_dormitory`.`users`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=image_detail">`csc_dormitory`.`image_detail`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=dormitory_detail">`csc_dormitory`.`dormitory_detail`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=d_detail">`csc_dormitory`.`d_detail`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=deposit&table=quantity">`deposit`.`quantity`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=deposit&table=multiplicity">`deposit`.`multiplicity`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=deposit&table=activity">`deposit`.`activity`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=deposit&table=user">`deposit`.`user`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=admin">`csc_dormitory`.`admin`</a></li></ul></div><div class="drop_list"><button title="Favorite tables" class="drop_button btn">Favorites</button><ul id="pma_favorite_list"><li class="warp_link">There are no favorite tables.</li></ul></div><div class="clearfloat"></div></div>
+  <div class="pma_quick_warp"><div class="drop_list"><button title="Recent tables" class="drop_button btn">Recent</button><ul id="pma_recent_list"><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=users">`csc_dormitory`.`users`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=dormitory_detail">`csc_dormitory`.`dormitory_detail`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=dormitory">`csc_dormitory`.`dormitory`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=image_detail">`csc_dormitory`.`image_detail`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=d_detail">`csc_dormitory`.`d_detail`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=deposit&table=quantity">`deposit`.`quantity`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=deposit&table=multiplicity">`deposit`.`multiplicity`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=deposit&table=activity">`deposit`.`activity`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=deposit&table=user">`deposit`.`user`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=admin">`csc_dormitory`.`admin`</a></li></ul></div><div class="drop_list"><button title="Favorite tables" class="drop_button btn">Favorites</button><ul id="pma_favorite_list"><li class="warp_link">There are no favorite tables.</li></ul></div><div class="clearfloat"></div></div>
 
 <div class="clearfloat"></div>
 
@@ -597,7 +597,7 @@ $.extend(defaultValues, {
                             : <span>During current session</span>
                     </span>
             </div>
-                            <span class="query">SELECT `address` FROM `dormitory` WHERE `dormitory`.`id` = 5</span>
+                            <span class="query">SELECT * FROM `dormitory`</span>
                         </div>
                                             <div class="message history collapsed hide select"
                             targetdb="csc_dormitory" targettable="dormitory">
@@ -635,86 +635,10 @@ $.extend(defaultValues, {
                             : <span>During current session</span>
                     </span>
             </div>
-                            <span class="query">SELECT `address` FROM `dormitory` WHERE `dormitory`.`id` = 5</span>
-                        </div>
-                                            <div class="message history collapsed hide"
-                            targetdb="csc_dormitory" targettable="dormitory_detail">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">CREATE TABLE `csc_dormitory`.`dormitory_detail` ( `id` INT NOT NULL ,  `other` TEXT NOT NULL ,  `map` VARCHAR(100) NOT NULL ) ENGINE = InnoDB;</span>
-                        </div>
-                                            <div class="message history collapsed hide"
-                            targetdb="csc_dormitory" targettable="d_detail">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">CREATE TABLE `csc_dormitory`.`d_detail` ( `id` INT NOT NULL AUTO_INCREMENT ,  `dormitory_id` INT NULL ,  `map` VARCHAR(100) NULL ,  `other` TEXT NULL ,    PRIMARY KEY  (`id`)) ENGINE = InnoDB;</span>
+                            <span class="query">SELECT * FROM `dormitory`</span>
                         </div>
                                             <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory_detail">
+                            targetdb="csc_dormitory" targettable="dormitory">
                             <div class="action_content">
                     <span class="action collapse">
             Collapse
@@ -749,10 +673,10 @@ $.extend(defaultValues, {
                             : <span>During current session</span>
                     </span>
             </div>
-                            <span class="query">SELECT * FROM `dormitory_detail`</span>
+                            <span class="query">SELECT * FROM `dormitory`</span>
                         </div>
                                             <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory_detail">
+                            targetdb="csc_dormitory" targettable="users">
                             <div class="action_content">
                     <span class="action collapse">
             Collapse
@@ -787,10 +711,10 @@ $.extend(defaultValues, {
                             : <span>During current session</span>
                     </span>
             </div>
-                            <span class="query">SELECT * FROM `dormitory_detail`</span>
+                            <span class="query">SELECT * FROM `users`</span>
                         </div>
                                             <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="d_detail">
+                            targetdb="csc_dormitory" targettable="dormitory">
                             <div class="action_content">
                     <span class="action collapse">
             Collapse
@@ -825,10 +749,10 @@ $.extend(defaultValues, {
                             : <span>During current session</span>
                     </span>
             </div>
-                            <span class="query">SELECT * FROM `d_detail`</span>
+                            <span class="query">SELECT * FROM `dormitory`</span>
                         </div>
                                             <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="d_detail">
+                            targetdb="csc_dormitory" targettable="dormitory">
                             <div class="action_content">
                     <span class="action collapse">
             Collapse
@@ -863,10 +787,10 @@ $.extend(defaultValues, {
                             : <span>During current session</span>
                     </span>
             </div>
-                            <span class="query">SELECT * FROM `d_detail`</span>
+                            <span class="query">SELECT * FROM `dormitory`</span>
                         </div>
-                                            <div class="message history collapsed hide"
-                            targetdb="csc_dormitory" targettable="image_detail">
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
                             <div class="action_content">
                     <span class="action collapse">
             Collapse
@@ -901,7 +825,387 @@ $.extend(defaultValues, {
                             : <span>During current session</span>
                     </span>
             </div>
-                            <span class="query">CREATE TABLE `csc_dormitory`.`image_detail` ( `id` INT NOT NULL AUTO_INCREMENT ,  `image_1` VARCHAR(30) NULL ,  `image_2` VARCHAR(30) NULL ,  `image_3` VARCHAR(30) NULL ,  `image_4` VARCHAR(30) NULL ,  `image_5` VARCHAR(30) NULL ,    PRIMARY KEY  (`id`)) ENGINE = InnoDB;</span>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="users">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `users`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="users">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `users`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="users">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `users`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="users">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `users`</span>
                         </div>
                                             <div class="message history collapsed hide select"
                             targetdb="csc_dormitory" targettable="image_detail">
@@ -942,6 +1246,237 @@ $.extend(defaultValues, {
                             <span class="query">SELECT * FROM `image_detail`</span>
                         </div>
                                             <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory_detail">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory_detail`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory_detail">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory_detail`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide"
+                            targetdb="csc_dormitory" targettable="">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">TRUNCATE `dormitory`;
+TRUNCATE `dormitory_detail`;
+TRUNCATE `image_detail`;
+</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory_detail">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory_detail`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
                             targetdb="csc_dormitory" targettable="users">
                             <div class="action_content">
                     <span class="action collapse">
@@ -978,538 +1513,6 @@ $.extend(defaultValues, {
                     </span>
             </div>
                             <span class="query">SELECT * FROM `users`</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="users">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `users`</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="users">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `users`</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
                         </div>
                                                 </div><!-- console_message_container -->
             <div class="query_input">
