@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="js/vendor/codemirror/lib/codemirror.css?v=5.1.3">
     <link rel="stylesheet" type="text/css" href="js/vendor/codemirror/addon/hint/show-hint.css?v=5.1.3">
     <link rel="stylesheet" type="text/css" href="js/vendor/codemirror/addon/lint/lint.css?v=5.1.3">
-    <link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/theme.css?v=5.1.3&nocache=4150404561ltr&server=1">
+    <link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/theme.css?v=5.1.3&nocache=643972006ltr&server=1">
     <link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/printview.css?v=5.1.3" media="print" id="printcss">
     <title>localhost / 127.0.0.1 | phpMyAdmin 5.1.3</title>
     <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery.min.js?v=5.1.3"></script>
@@ -56,7 +56,7 @@
 
 <script data-cfasync="false" type="text/javascript">
 // <![CDATA[
-CommonParams.setAll({common_query:"",opendb_url:"index.php?route=/database/structure",lang:"en",server:"1",table:"",db:"",token:"4e375c2b2b2f3767425c27482124216e",text_dir:"ltr",show_databases_navigation_as_tree:true,pma_text_default_tab:"Browse",pma_text_left_default_tab:"Structure",pma_text_left_default_tab2:false,LimitChars:"50",pftext:"P",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",PMA_VERSION:"5.1.3",auth_type:"config",user:"root"});
+CommonParams.setAll({common_query:"",opendb_url:"index.php?route=/database/structure",lang:"en",server:"1",table:"",db:"",token:"4a2469425d5135682d74422d7e366f62",text_dir:"ltr",show_databases_navigation_as_tree:true,pma_text_default_tab:"Browse",pma_text_left_default_tab:"Structure",pma_text_left_default_tab2:false,LimitChars:"50",pftext:"P",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",PMA_VERSION:"5.1.3",auth_type:"config",user:"root"});
 var firstDayOfCalendar = '0';
 var themeImagePath = '.\/themes\/pmahomme\/img\/';
 var mysqlDocTemplate = '.\/url.php\u003Furl\u003Dhttps\u00253A\u00252F\u00252Fdev.mysql.com\u00252Fdoc\u00252Frefman\u00252F8.0\u00252Fen\u00252F\u002525s.html';
@@ -260,7 +260,7 @@ $(function() {
       </div>
       <div id="pma_navigation_tree" class="list_container synced highlight autoexpand">
 
-  <div class="pma_quick_warp"><div class="drop_list"><button title="Recent tables" class="drop_button btn">Recent</button><ul id="pma_recent_list"><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=users">`csc_dormitory`.`users`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=admin">`csc_dormitory`.`admin`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=dormitory">`csc_dormitory`.`dormitory`</a></li></ul></div><div class="drop_list"><button title="Favorite tables" class="drop_button btn">Favorites</button><ul id="pma_favorite_list"><li class="warp_link">There are no favorite tables.</li></ul></div><div class="clearfloat"></div></div>
+  <div class="pma_quick_warp"><div class="drop_list"><button title="Recent tables" class="drop_button btn">Recent</button><ul id="pma_recent_list"><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=dormitory">`csc_dormitory`.`dormitory`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=users">`csc_dormitory`.`users`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=image_detail">`csc_dormitory`.`image_detail`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=dormitory_detail">`csc_dormitory`.`dormitory_detail`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=d_detail">`csc_dormitory`.`d_detail`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=deposit&table=quantity">`deposit`.`quantity`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=deposit&table=multiplicity">`deposit`.`multiplicity`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=deposit&table=activity">`deposit`.`activity`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=deposit&table=user">`deposit`.`user`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=csc_dormitory&table=admin">`csc_dormitory`.`admin`</a></li></ul></div><div class="drop_list"><button title="Favorite tables" class="drop_button btn">Favorites</button><ul id="pma_favorite_list"><li class="warp_link">There are no favorite tables.</li></ul></div><div class="clearfloat"></div></div>
 
 <div class="clearfloat"></div>
 
@@ -273,7 +273,7 @@ $(function() {
 
 <div id='pma_navigation_tree_content'>
   <ul>
-    <li class="first new_database italics"><div class='block'><i class='first'></i></div><div class="block second"><a href='index.php?route=/server/databases&server=1'><img src="themes/dot.gif" title="" alt="" class="icon ic_b_newdb"></a></div><a class='hover_show_full' href='index.php?route=/server/databases&server=1' title='New'>New</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class="hide paths_nav" data-apath="cm9vdA==.Y3NjX2Rvcm1pdG9yeQ==" data-vpath="cm9vdA==.Y3NjX2Rvcm1pdG9yeQ==" data-pos="0"></span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block second"><a href='index.php?route=/database/operations&amp;server=1&amp;db=csc_dormitory&amp;'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class='hover_show_full' href='index.php?route=/database/structure&server=1&amp;db=csc_dormitory' title='Structure'>csc_dormitory</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class="hide paths_nav" data-apath="cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h" data-vpath="cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h" data-pos="0"></span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block second"><a href='index.php?route=/database/operations&amp;server=1&amp;db=information_schema&amp;'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class='hover_show_full' href='index.php?route=/database/structure&server=1&amp;db=information_schema' title='Structure'>information_schema</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class="hide paths_nav" data-apath="cm9vdA==.bXlzcWw=" data-vpath="cm9vdA==.bXlzcWw=" data-pos="0"></span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block second"><a href='index.php?route=/database/operations&amp;server=1&amp;db=mysql&amp;'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class='hover_show_full' href='index.php?route=/database/structure&server=1&amp;db=mysql' title='Structure'>mysql</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class="hide paths_nav" data-apath="cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h" data-vpath="cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h" data-pos="0"></span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block second"><a href='index.php?route=/database/operations&amp;server=1&amp;db=performance_schema&amp;'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class='hover_show_full' href='index.php?route=/database/structure&server=1&amp;db=performance_schema' title='Structure'>performance_schema</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==" data-pos="0"></span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block second"><a href='index.php?route=/database/operations&amp;server=1&amp;db=phpmyadmin&amp;'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class='hover_show_full' href='index.php?route=/database/structure&server=1&amp;db=phpmyadmin' title='Structure'>phpmyadmin</a><div class="clearfloat"></div></li><li class="last database"><div class='block'><i></i><a class="expander" href='#'><span class="hide paths_nav" data-apath="cm9vdA==.dGVzdA==" data-vpath="cm9vdA==.dGVzdA==" data-pos="0"></span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block second"><a href='index.php?route=/database/operations&amp;server=1&amp;db=test&amp;'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class='hover_show_full' href='index.php?route=/database/structure&server=1&amp;db=test' title='Structure'>test</a><div class="clearfloat"></div></li>
+    <li class="first new_database italics"><div class='block'><i class='first'></i></div><div class="block second"><a href='index.php?route=/server/databases&server=1'><img src="themes/dot.gif" title="" alt="" class="icon ic_b_newdb"></a></div><a class='hover_show_full' href='index.php?route=/server/databases&server=1' title='New'>New</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class="hide paths_nav" data-apath="cm9vdA==.Y3NjX2Rvcm1pdG9yeQ==" data-vpath="cm9vdA==.Y3NjX2Rvcm1pdG9yeQ==" data-pos="0"></span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block second"><a href='index.php?route=/database/operations&amp;server=1&amp;db=csc_dormitory&amp;'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class='hover_show_full' href='index.php?route=/database/structure&server=1&amp;db=csc_dormitory' title='Structure'>csc_dormitory</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class="hide paths_nav" data-apath="cm9vdA==.ZGVwb3NpdA==" data-vpath="cm9vdA==.ZGVwb3NpdA==" data-pos="0"></span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block second"><a href='index.php?route=/database/operations&amp;server=1&amp;db=deposit&amp;'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class='hover_show_full' href='index.php?route=/database/structure&server=1&amp;db=deposit' title='Structure'>deposit</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class="hide paths_nav" data-apath="cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h" data-vpath="cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h" data-pos="0"></span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block second"><a href='index.php?route=/database/operations&amp;server=1&amp;db=information_schema&amp;'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class='hover_show_full' href='index.php?route=/database/structure&server=1&amp;db=information_schema' title='Structure'>information_schema</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class="hide paths_nav" data-apath="cm9vdA==.bXlzcWw=" data-vpath="cm9vdA==.bXlzcWw=" data-pos="0"></span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block second"><a href='index.php?route=/database/operations&amp;server=1&amp;db=mysql&amp;'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class='hover_show_full' href='index.php?route=/database/structure&server=1&amp;db=mysql' title='Structure'>mysql</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class="hide paths_nav" data-apath="cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h" data-vpath="cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h" data-pos="0"></span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block second"><a href='index.php?route=/database/operations&amp;server=1&amp;db=performance_schema&amp;'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class='hover_show_full' href='index.php?route=/database/structure&server=1&amp;db=performance_schema' title='Structure'>performance_schema</a><div class="clearfloat"></div></li><li class="database"><div class='block'><i></i><b></b><a class="expander" href='#'><span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==" data-pos="0"></span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block second"><a href='index.php?route=/database/operations&amp;server=1&amp;db=phpmyadmin&amp;'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class='hover_show_full' href='index.php?route=/database/structure&server=1&amp;db=phpmyadmin' title='Structure'>phpmyadmin</a><div class="clearfloat"></div></li><li class="last database"><div class='block'><i></i><a class="expander" href='#'><span class="hide paths_nav" data-apath="cm9vdA==.dGVzdA==" data-vpath="cm9vdA==.dGVzdA==" data-pos="0"></span><img src="themes/dot.gif" title="Expand/Collapse" alt="Expand/Collapse" class="icon ic_b_plus"></a></div><div class="block second"><a href='index.php?route=/database/operations&amp;server=1&amp;db=test&amp;'><img src="themes/dot.gif" title="Database operations" alt="Database operations" class="icon ic_s_db"></a></div><a class='hover_show_full' href='index.php?route=/database/structure&server=1&amp;db=test' title='Structure'>test</a><div class="clearfloat"></div></li>
   </ul>
 </div>
 
@@ -284,7 +284,7 @@ $(function() {
                   <div id="pma_navigation_settings"><div class="page_settings"><form method="post" action="index.php&#x3F;route&#x3D;&#x25;2Fexport&amp;server&#x3D;1" class="config-form disableAjax">
   <input type="hidden" name="tab_hash" value="">
       <input type="hidden" name="check_page_refresh" id="check_page_refresh" value="">
-    <input type="hidden" name="token" value="4e375c2b2b2f3767425c27482124216e">
+    <input type="hidden" name="token" value="4a2469425d5135682d74422d7e366f62">
   <input type="hidden" name="submit_save" value="Navi">
 <ul class="tabs responsivetable row">
       <li><a href="#Navi_panel">Navigation panel</a></li>
@@ -597,10 +597,48 @@ $.extend(defaultValues, {
                             : <span>During current session</span>
                     </span>
             </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
+                            <span class="query">SELECT `address` FROM `dormitory` WHERE `dormitory`.`id` = 5</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT `address` FROM `dormitory` WHERE `dormitory`.`id` = 5</span>
                         </div>
                                             <div class="message history collapsed hide"
-                            targetdb="csc_dormitory" targettable="dormitory">
+                            targetdb="csc_dormitory" targettable="dormitory_detail">
                             <div class="action_content">
                     <span class="action collapse">
             Collapse
@@ -635,86 +673,10 @@ $.extend(defaultValues, {
                             : <span>During current session</span>
                     </span>
             </div>
-                            <span class="query">INSERT INTO `dormitory` (`id`, `admin_id`, `dormitory_room`, `price`, `desscription`, `image`, `address`, `contact`) VALUES (NULL, &#039;1&#039;, &#039;หอพักเชรวี&#039;, &#039;15000&#039;, &#039;เเอร์&#039;, &#039;room3.jpg&#039;, &#039;ที่นี่&#039;, &#039;0987654321&#039;);</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
-                        </div>
-                                            <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
+                            <span class="query">CREATE TABLE `csc_dormitory`.`dormitory_detail` ( `id` INT NOT NULL ,  `other` TEXT NOT NULL ,  `map` VARCHAR(100) NOT NULL ) ENGINE = InnoDB;</span>
                         </div>
                                             <div class="message history collapsed hide"
-                            targetdb="csc_dormitory" targettable="dormitory">
+                            targetdb="csc_dormitory" targettable="d_detail">
                             <div class="action_content">
                     <span class="action collapse">
             Collapse
@@ -749,10 +711,10 @@ $.extend(defaultValues, {
                             : <span>During current session</span>
                     </span>
             </div>
-                            <span class="query">INSERT INTO `dormitory` (`id`, `admin_id`, `dormitory_room`, `price`, `desscription`, `image`, `address`, `contact`) VALUES (NULL, &#039;1&#039;, &#039;หอพัก Student condo&#039;, &#039;15000&#039;, &#039;บลาๆ&#039;, &#039;room4.jpg&#039;, &#039;ที่นั่น&#039;, &#039;0963852741&#039;);</span>
+                            <span class="query">CREATE TABLE `csc_dormitory`.`d_detail` ( `id` INT NOT NULL AUTO_INCREMENT ,  `dormitory_id` INT NULL ,  `map` VARCHAR(100) NULL ,  `other` TEXT NULL ,    PRIMARY KEY  (`id`)) ENGINE = InnoDB;</span>
                         </div>
                                             <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="dormitory">
+                            targetdb="csc_dormitory" targettable="dormitory_detail">
                             <div class="action_content">
                     <span class="action collapse">
             Collapse
@@ -787,10 +749,10 @@ $.extend(defaultValues, {
                             : <span>During current session</span>
                     </span>
             </div>
-                            <span class="query">SELECT * FROM `dormitory`</span>
+                            <span class="query">SELECT * FROM `dormitory_detail`</span>
                         </div>
                                             <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="admin">
+                            targetdb="csc_dormitory" targettable="dormitory_detail">
                             <div class="action_content">
                     <span class="action collapse">
             Collapse
@@ -825,10 +787,10 @@ $.extend(defaultValues, {
                             : <span>During current session</span>
                     </span>
             </div>
-                            <span class="query">SELECT * FROM `admin`</span>
+                            <span class="query">SELECT * FROM `dormitory_detail`</span>
                         </div>
                                             <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="admin">
+                            targetdb="csc_dormitory" targettable="d_detail">
                             <div class="action_content">
                     <span class="action collapse">
             Collapse
@@ -863,10 +825,48 @@ $.extend(defaultValues, {
                             : <span>During current session</span>
                     </span>
             </div>
-                            <span class="query">SELECT * FROM `admin`</span>
+                            <span class="query">SELECT * FROM `d_detail`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="d_detail">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `d_detail`</span>
                         </div>
                                             <div class="message history collapsed hide"
-                            targetdb="csc_dormitory" targettable="users">
+                            targetdb="csc_dormitory" targettable="image_detail">
                             <div class="action_content">
                     <span class="action collapse">
             Collapse
@@ -901,10 +901,10 @@ $.extend(defaultValues, {
                             : <span>During current session</span>
                     </span>
             </div>
-                            <span class="query">CREATE TABLE `csc_dormitory`.`users` ( `id` INT NOT NULL AUTO_INCREMENT ,  `username` VARCHAR(30) NOT NULL ,  `password` VARCHAR(50) NOT NULL ,  `name` VARCHAR(20) NOT NULL ,  `last_name` VARCHAR(20) NOT NULL ,    PRIMARY KEY  (`id`)) ENGINE = InnoDB;</span>
+                            <span class="query">CREATE TABLE `csc_dormitory`.`image_detail` ( `id` INT NOT NULL AUTO_INCREMENT ,  `image_1` VARCHAR(30) NULL ,  `image_2` VARCHAR(30) NULL ,  `image_3` VARCHAR(30) NULL ,  `image_4` VARCHAR(30) NULL ,  `image_5` VARCHAR(30) NULL ,    PRIMARY KEY  (`id`)) ENGINE = InnoDB;</span>
                         </div>
                                             <div class="message history collapsed hide select"
-                            targetdb="csc_dormitory" targettable="users">
+                            targetdb="csc_dormitory" targettable="image_detail">
                             <div class="action_content">
                     <span class="action collapse">
             Collapse
@@ -939,45 +939,7 @@ $.extend(defaultValues, {
                             : <span>During current session</span>
                     </span>
             </div>
-                            <span class="query">SELECT * FROM `users`</span>
-                        </div>
-                                            <div class="message history collapsed hide"
-                            targetdb="csc_dormitory" targettable="users">
-                            <div class="action_content">
-                    <span class="action collapse">
-            Collapse
-                    </span>
-                            <span class="action expand">
-            Expand
-                    </span>
-                            <span class="action requery">
-            Requery
-                    </span>
-                            <span class="action edit">
-            Edit
-                    </span>
-                            <span class="action explain">
-            Explain
-                    </span>
-                            <span class="action profiling">
-            Profiling
-                    </span>
-                            <span class="action bookmark">
-            Bookmark
-                    </span>
-                            <span class="text failed">
-            Query failed
-                    </span>
-                            <span class="text targetdb">
-            Database
-                            : <span>csc_dormitory</span>
-                    </span>
-                            <span class="text query_time">
-            Queried time
-                            : <span>During current session</span>
-                    </span>
-            </div>
-                            <span class="query">INSERT INTO `users` (`id`, `username`, `password`, `name`, `last_name`) VALUES (NULL, &#039;admin&#039;, &#039;admin&#039;, &#039;test&#039;, &#039;web&#039;);</span>
+                            <span class="query">SELECT * FROM `image_detail`</span>
                         </div>
                                             <div class="message history collapsed hide select"
                             targetdb="csc_dormitory" targettable="users">
@@ -1054,6 +1016,500 @@ $.extend(defaultValues, {
                     </span>
             </div>
                             <span class="query">SELECT * FROM `users`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="users">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `users`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
+                        </div>
+                                            <div class="message history collapsed hide select"
+                            targetdb="csc_dormitory" targettable="dormitory">
+                            <div class="action_content">
+                    <span class="action collapse">
+            Collapse
+                    </span>
+                            <span class="action expand">
+            Expand
+                    </span>
+                            <span class="action requery">
+            Requery
+                    </span>
+                            <span class="action edit">
+            Edit
+                    </span>
+                            <span class="action explain">
+            Explain
+                    </span>
+                            <span class="action profiling">
+            Profiling
+                    </span>
+                            <span class="action bookmark">
+            Bookmark
+                    </span>
+                            <span class="text failed">
+            Query failed
+                    </span>
+                            <span class="text targetdb">
+            Database
+                            : <span>csc_dormitory</span>
+                    </span>
+                            <span class="text query_time">
+            Queried time
+                            : <span>During current session</span>
+                    </span>
+            </div>
+                            <span class="query">SELECT * FROM `dormitory`</span>
                         </div>
                                                 </div><!-- console_message_container -->
             <div class="query_input">

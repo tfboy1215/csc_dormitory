@@ -33,7 +33,7 @@ include("conDB.php");
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <span class="mr-2 d-none d-lg-inline text-white-600 small"><?php print($_SESSION["username"] . "&nbsp;") ?></span>
-                            <img class="rounded-circle" src="../image/other/undraw_profile.svg" width="40px" height="40px">
+                            <img class="rounded-circle" src="../image/other/undraw_profile_3.svg" width="40px" height="40px">
                         </a>
 
                         <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
@@ -56,7 +56,7 @@ include("conDB.php");
                         ?>
                             <div class="col-md-3 text-end">
                                 <a href="login.php"><button type="button" class="btn btn-outline-primary me-2 bg-light">Login</button></a>
-                                <button type="button" class="btn btn-primary">Sign-up</button>
+                                <a href="signup.php"><button type="button" class="btn btn-primary">Sign-up</button></a>
                             </div>
                         <?php
                     }
