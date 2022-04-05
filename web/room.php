@@ -14,7 +14,7 @@ include("conDB.php");
                     
                 </ul> -->
                 <div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <a href="room.php">
+                    <a href="home.php">
                         <i class="fa-solid fa-house" style="height: 50px;width: 50px; color:white;"></i>
                         <label for="head">
                             <h1 class="display-5" style="color:white;"> หอพัก CSC</h1>
@@ -94,7 +94,7 @@ include("conDB.php");
                     <th>ราคา</th>
                     <th>รายระเอียด</th>
                     <th>ที่อยู่</th>
-                    <th>contact</th>
+                    <th>ติดต่อ</th>
                     <th></th>
                 </tr>
             </thead>
@@ -160,14 +160,15 @@ include("conDB.php");
                                 <button type="button" name='<?php echo $obj ?>' id="approveBt" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#approve""><i class=" fa-solid fa-check" style="height: 20px;width: 20px;"></i></button>
                             <?php
                             }
-                            if ((int)$_SESSION['role'] <= 2) {
+                            if ((int)$_SESSION['role'] <= 2 || $row['user_id'] == $_SESSION['user_id']) {
                                 $obj = json_encode($row);
                             ?>
                                 <button type="button" name='<?php echo $obj ?>' id="deleteBt" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteDom"><i class=" fa-solid fa-x" style="height: 20px;width: 20px;"></i></button>
                 <?php
                             }
                         }
-                        print('<a href="roomDetail.php" target="_blank"><button type="button" class="btn btn-info btn-sm"><i class="fa-regular fa-circle-info" style="height: 20px;width: 20px;"></i></button></a>');
+                        $url = "roomDetail.php?id=".$row['id'];
+                        print('<a href="'.$url.'" target="_blank"><button type="button" class="btn btn-info btn-sm"><i class="fa-regular fa-circle-info" style="height: 20px;width: 20px;"></i></button></a>');
                         print('</td>');
                         print('</tr>');
                     }
@@ -186,6 +187,8 @@ include("conDB.php");
 
 
 </body>
+
+<!-- add room -->
 <div class="modal fade" id="add" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -234,6 +237,7 @@ include("conDB.php");
     </div>
 </div>
 
+<!-- เลือกโหมด -->
 <div class="modal fade" id="selectMode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -257,7 +261,7 @@ include("conDB.php");
                             <?php
                             } else {
                             ?>
-                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <select name="mode" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                                     <option value="all">All room</option>
                                     <option value="my_room">My room</option>
                                 </select>
@@ -276,7 +280,7 @@ include("conDB.php");
     </div>
 </div>
 
-
+<!-- อนุมัติ -->
 <div class="modal fade" id="approve" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -301,6 +305,7 @@ include("conDB.php");
     </div>
 </div>
 
+<!-- delete ห้อง -->
 <div class="modal fade" id="deleteDom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">

@@ -11,7 +11,9 @@
     width: 80%;
 }
 
-
+.room .detail{
+    margin: auto;
+}
 
 table {
     border-spacing: 0px;
@@ -26,6 +28,21 @@ table {
 .word-next-line{
     word-break: break-all;
 }
+
+.size{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+}
+
+.size-2{
+    width: 500px;
+    height: 400px;
+    margin: auto;
+}
+
+
+
 
 
 
