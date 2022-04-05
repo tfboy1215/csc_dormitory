@@ -135,6 +135,9 @@ include("conDB.php");
             <h3>ที่อยู่: <?php echo $row[0]['address'] ?> </h3>
             <h3>ติดต่อ: <?php echo $row[0]['contact'] ?> </h3>
             <h3>รายระเอียด: <?php echo $row[0]['desscription'] ?> </h3>
+            <h3><i class="fa-brands fa-facebook"></i> <?php echo $row[0]['facebook'] ?> </h3>
+            <h3><i class="fa-brands fa-line"></i> <?php echo $row[0]['line'] ?> </h3>
+            <h3><i class="fa-brands fa-instagram"></i>. <?php echo $row[0]['facebook'] ?> </h3>
             <?php
             if ($_SESSION) { ?>
                 <div class="d-flex justify-content-center room">
@@ -207,6 +210,18 @@ include("conDB.php");
                         <input type="text" class="form-control" id="contact" name="contact" required="required">
                     </div>
                     <div class="form-group">
+                        <label for="add" class="form-label">Facebook</label>
+                        <input type="text" class="form-control" id="facebook" name="facebook" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="add" class="form-label">Line</label>
+                        <input type="text" class="form-control" id="line" name="line" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="add" class="form-label">IG</label>
+                        <input type="text" class="form-control" id="ig" name="ig" required="required">
+                    </div>
+                    <div class="form-group">
                         <label for="exampleFormControlTextarea1">คำอธิบาย</label>
                         <textarea class="form-control" id="other" name="other" rows="3"></textarea>
                     </div>
@@ -216,7 +231,7 @@ include("conDB.php");
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-success">edit</button>
+                    <button type="submit" class="btn btn-warning">edit</button>
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
                 </div>
             </form>
@@ -255,7 +270,7 @@ include("conDB.php");
 
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-success">Upload</button>
+                    <button type="submit" class="btn btn-info">Upload</button>
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
                 </div>
             </form>
