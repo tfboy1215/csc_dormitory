@@ -86,13 +86,13 @@ include("conDB.php");
         }
         ?>
         <hr>
-        <table id="datatable" class="table table-hover word-next-line" style="width:100%">
+        <table id="datatable" class="table table-hover word-next-line" style="width:110%">
             <thead>
                 <tr>
                     <th></th>
                     <th>หอ</th>
                     <th>ราคา</th>
-                    <th>รายระเอียด</th>
+                    <th>สิ่งอำนวยความสะดวก</th>
                     <th>ที่อยู่</th>
                     <th>ติดต่อ</th>
                     <th></th>
