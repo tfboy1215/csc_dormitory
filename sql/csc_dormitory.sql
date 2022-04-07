@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 07, 2022 at 10:22 AM
+-- Generation Time: Apr 07, 2022 at 02:36 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -29,14 +29,14 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `dormitory` (
   `id` int(11) NOT NULL,
-  `user_id` int(11) DEFAULT NULL,
-  `dormitory_room` text DEFAULT NULL,
-  `price` decimal(10,2) DEFAULT NULL,
-  `desscription` text DEFAULT NULL,
+  `user_id` int(11) NOT NULL,
+  `dormitory_room` text NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  `desscription` text NOT NULL,
   `image` varchar(255) NOT NULL DEFAULT 'null.jpg',
-  `address` text DEFAULT NULL,
-  `contact` varchar(255) DEFAULT NULL,
-  `status` enum('APPROVE','WAIT_APPROVE') DEFAULT NULL
+  `address` text NOT NULL,
+  `contact` varchar(255) NOT NULL,
+  `status` enum('APPROVE','WAIT_APPROVE') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -50,9 +50,9 @@ CREATE TABLE `dormotory_detail` (
   `dormitory_id` int(11) DEFAULT NULL,
   `map` text DEFAULT NULL,
   `other` text NOT NULL DEFAULT '..',
-  `line` text DEFAULT NULL,
-  `facebook` text DEFAULT NULL,
-  `ig` text DEFAULT NULL
+  `line` text NOT NULL,
+  `facebook` text NOT NULL,
+  `ig` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -63,7 +63,7 @@ CREATE TABLE `dormotory_detail` (
 
 CREATE TABLE `image_detail` (
   `id` int(11) NOT NULL,
-  `dormitory_id` int(11) DEFAULT NULL,
+  `dormitory_id` int(11) NOT NULL,
   `image_1` varchar(255) NOT NULL DEFAULT 'null.jpg',
   `image_2` varchar(255) NOT NULL DEFAULT 'null.jpg',
   `image_3` varchar(255) NOT NULL DEFAULT 'null.jpg',
@@ -80,10 +80,10 @@ CREATE TABLE `image_detail` (
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `username` varchar(30) DEFAULT NULL,
-  `pass` varchar(50) DEFAULT NULL,
-  `name` varchar(20) DEFAULT NULL,
-  `last_name` varchar(20) DEFAULT NULL,
+  `username` varchar(30) NOT NULL,
+  `pass` varchar(50) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `last_name` varchar(20) NOT NULL,
   `role` int(11) NOT NULL DEFAULT 3
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
