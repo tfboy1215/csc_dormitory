@@ -9,6 +9,10 @@ function edit2(event) {
     $('#contact').val(obj.contact);
     $('#other').text(obj.other);
     $('#map').text(obj.map);
+    $('#facebook').val(obj.facebook);
+    $('#line').val(obj.line);
+    $('#ig').val(obj.ig);
+
 
 }
 

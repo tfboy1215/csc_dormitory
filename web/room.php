@@ -14,7 +14,7 @@ include("conDB.php");
                     
                 </ul> -->
                 <div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <a href="home.php">
+                    <a href="room.php">
                         <i class="fa-solid fa-house" style="height: 50px;width: 50px; color:white;"></i>
                         <label for="head">
                             <h1 class="display-5" style="color:white;"> หอพัก CSC</h1>
