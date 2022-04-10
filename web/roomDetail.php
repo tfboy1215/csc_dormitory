@@ -134,7 +134,7 @@ include("conDB.php");
             <h3>ราคา: <?php echo $row[0]['price'] ?> บาท</h3>
             <h3>ที่อยู่: <?php echo $row[0]['address'] ?> </h3>
             <h3>ติดต่อ: <?php echo $row[0]['contact'] ?> </h3>
-            <h3>สิ่งอำนวยความสะดวก: <?php echo $row[0]['desscription'] ?> </h3>
+            <h3>รายละเอียด: <?php echo $row[0]['desscription'] ?> </h3>
             <h3><i class="fa-brands fa-facebook"></i> <?php echo $row[0]['facebook'] ?> </h3>
             <h3><i class="fa-brands fa-line"></i> <?php echo $row[0]['line'] ?> </h3>
             <h3><i class="fa-brands fa-instagram"></i>. <?php echo $row[0]['facebook'] ?> </h3>
@@ -202,7 +202,7 @@ include("conDB.php");
                         <input type="text" class="form-control" id="editAddress" name="address" required="required">
                     </div>
                     <div class="form-group">
-                        <label for="add" class="form-label">สิ่งอำนวยความสะดวก</label>
+                        <label for="add" class="form-label">รายละเอียด</label>
                         <input type="text" class="form-control" id="editDess" name="desscription" required="required">
                     </div>
                     <div class="form-group">
@@ -222,7 +222,7 @@ include("conDB.php");
                         <input type="text" class="form-control" id="ig" name="ig" required="required">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">รายละเอียด</label>
+                        <label for="exampleFormControlTextarea1">สิ่งอำนวยความสะดวก</label>
                         <textarea class="form-control" id="other" name="other" rows="3"></textarea>
                     </div>
                     <div class="form-group">
