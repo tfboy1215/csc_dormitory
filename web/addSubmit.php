@@ -5,7 +5,6 @@ $uid = $_POST['user_id'];
 $n = $_POST['name'];
 $p = $_POST['price'];
 $d = $_POST['desscription'];
-$a = $_POST['address'];
 $c = $_POST['contact'];
 $r = $_POST['role'];
 
@@ -40,7 +39,7 @@ if (($_FILES['my_file']['name'] != "")) {
     }
 }
 
-$sql = "INSERT INTO dormitory (user_id, dormitory_room, price, desscription, address, contact, status, image) VALUE (" . $uid . ", '" . $n . "', '" . $p . "', '" . $d . "', '" . $a . "', '" . $c . "', '" . $status . "',  '" . $file_up . "')";
+$sql = "INSERT INTO dormitory (user_id, dormitory_room, price, desscription, contact, status, image) VALUE (" . $uid . ", '" . $n . "', '" . $p . "', '" . $d . "', '" . $a . "', '" . $c . "', '" . $status . "',  '" . $file_up . "')";
 // $sql = "INSERT INTO users (user_id) VALUE (' . $uid . ')"; 
 
 if ($conn->query($sql) === TRUE) {
